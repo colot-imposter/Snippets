@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/style/style.css">
+    <title>Snippets of Code</title>
+  </head>
+  <body>
+    <h1>Snippet of Codes!</h1>
+
+    <div class="addsnippetbutton">
+      Add a <a href="/newCode">Code Snippet</a>
+    </div>
+
+      <table>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Notes</th>
+        <th>Language</th>
+        <th>Tags</th>
+      </tr>
+      {{#snipslist}}
+      <tr>
+      <!-- <td><img src="../public/photos/giphy.gif" alt="german-dancing like carlton from fresh house, but better"></td> -->
+      <td><a href='/update_snip/{{id}}'>{{title}}</a></td>
+      <td>{{body}}</td>
+      <td>{{notes}}</td>
+      <td>{{language}}</td>
+      <td>{{tags}}</td>
+      <td> <form action="/delete_snip/{{id}}" method="post">
+        <button type="submit">Delete</button>
+      </form></td>
+      </tr>
+      {{/snipslist}}
+      </table>
+  </body>
+</html>

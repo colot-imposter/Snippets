@@ -1,0 +1,22 @@
+body{
+  background-color: white;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+
+}
+
+img {
+    width: 17%;
+}
+
+.addsnippetbutton{
+  text-transform: uppercase;
+  margin: 10%;
+}
+
+td:hover{
+  background-color: white;
+}

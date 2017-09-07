@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/style/style.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Some Snippets!</h1>
+    <form action="/createSnip_form/{{id}}" method="post">
+      Title:<input type="text" name="Title" value="{{Title}}">
+      <br>
+      <!-- Body:<input type="textbox" name="email" value="{{Body}}"> -->
+    Body:  <textarea rows="4" cols="50" name="Body" value= {{Body}}>
+    Enter text here...</textarea>
+      <br>
+      Notes (Optional):<input type="text" name="Notes" value="{{Notes}}">
+      <input type="submit" value="Submit">
+      <br>
+      Language:<select type="select" name="Language" value="{{Language}}">
+      <option value="Java"></option>
+      <option value="JavaScript"></option>
+      <option value="HTML"></option>
+      <option value="CSS"></option>
+        </select>
+      <br>
+      Tags:<input type="text" name="Tags" value="{{Notes}}">
+
+
+
+    <div class="addsnippetbutton">
+     See All <a  href="/snippets">Snippets</a>
+    </div>
+
+  </body>
+</html>
